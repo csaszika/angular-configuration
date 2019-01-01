@@ -6,9 +6,9 @@ Add tslint to your rulesDirectory and extend base configuration:
 {
   "rulesDirectory": [
     "node_modules/codelyzer",
-    "node_modules/@otp/otp-angular-configuration/tslint"
+    "node_modules/angular-configuration/tslint"
   ],
-  "extends": ["./node_modules/@otp/otp-angular-configuration/tslint.json"]
+  "extends": ["./node_modules/angular-configuration/tslint.json"]
 }
 ```
 Usage in package.json:
@@ -27,7 +27,7 @@ Extend base configuration:
 
 ```
 {
-  "extends": "./node_modules/@otp/otp-angular-configuration/tsconfig.json"
+  "extends": "./node_modules/angular-configuration/tsconfig.json"
 }
 ```
 
@@ -37,7 +37,7 @@ Extend base configuration:
 
 ```
 {
-  "extends": "@otp/otp-angular-configuration/stylelint"
+  "extends": "angular-configuration/stylelint"
 }
 ```
 Usage in package.json:
@@ -53,7 +53,7 @@ Usage in package.json:
 Create .prettierrc.js file and use base configuration:
 
 ```
-const baseConfig = require('@otp/otp-angular-configuration/prettierrc');
+const baseConfig = require('angular-configuration/prettierrc');
 
 module.exports = {
   ...baseConfig
@@ -72,7 +72,7 @@ Usage in package.json:
 ```
 module.exports = {
   extends: [
-    '@otp/otp-angular-configuration/commitlint.config'
+    'angular-configuration/commitlint.config'
   ]
 };
 ```
