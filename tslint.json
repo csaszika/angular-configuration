@@ -1,7 +1,6 @@
 {
-  "rulesDirectory": [
-    "tslint-consistent-codestyle"
-  ],
+  "extends": ["rxjs-tslint-rules"],
+  "rulesDirectory": ["tslint-consistent-codestyle"],
   "rules": {
     "arrow-return-shorthand": true,
     "callable-types": true,
@@ -29,12 +28,30 @@
     "member-ordering": [
       true,
       {
-        "order": ["static-field", "instance-field", "static-method", "instance-method"]
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
       }
+    ],
+    "naming-convention": [
+      true,
+      { "type": "enumMember", "format": "UPPER_CASE" }
     ],
     "no-arg": true,
     "no-bitwise": true,
-    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "log",
+      "error",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
     "no-construct": true,
     "no-debugger": true,
     "no-duplicate-super": true,
@@ -54,7 +71,13 @@
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
-    "one-line": [true, "check-open-brace", "check-catch", "check-else", "check-whitespace"],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
     "prefer-const": true,
     "quotemark": [true, "single"],
     "radix": true,
@@ -77,7 +100,15 @@
       "check-format",
       "allow-leading-underscore"
     ],
-    "whitespace": [true, "check-branch", "check-decl", "check-module", "check-operator", "check-separator", "check-type"],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
@@ -88,7 +119,13 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-    "typedef": [true, "call-signature", "arrow-call-signature", "parameter", "arrow-parameter"],
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter"
+    ],
     "no-angle-bracket-type-assertion": true,
     "no-null-keyword": true,
     "prefer-object-spread": true,
@@ -97,19 +134,38 @@
     "prefer-template": true,
     "no-invalid-template-strings": true,
     "trailing-comma": true,
-    "ordered-imports": true,
-    "no-unused-variable": true,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "case-insensitive",
+        "grouped-imports": true,
+        "groups": [
+          {
+            "name": "current and parent directories",
+            "match": "^\\.",
+            "order": 20
+          },
+          { "name": "libraries", "match": ".*", "order": 10 }
+        ],
+        "module-source-path": "full"
+      }
+    ],
     "cyclomatic-complexity": [true, 4],
     "no-duplicate-imports": true,
     "no-magic-numbers": true,
     "only-arrow-functions": true,
     "ban": [true, "fdescribe", "fit", "xdescribe"],
-    "observable-postfix": true,
     "no-accessor-recursion": true,
     "no-collapsible-if": true,
     "no-static-this": true,
     "early-exit": {
       "severity": "warning"
-    }
+    },
+    "prefer-readonly": true,
+    "unnecessary-else": true,
+    "unnecessary-constructor": true,
+    "rxjs-finnish": true,
+    "rxjs-no-unsafe-takeuntil": true
   }
 }
