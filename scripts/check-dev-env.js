@@ -27,9 +27,9 @@ exec('npm config get registry', (error, stdin) => {
         return;
     }
 
-    if (!stdin.toString().trim().startsWith('http://nexapp01lpr.corp.otpbank.hu')) {
-        throw new Error('Use the OTP nexus!');
-    }
+    // if (!stdin.toString().trim().startsWith('your.artifactory')) {
+    //     throw new Error('Use your artifactory!');
+    // }
 });
 
 function getVersionOf(entity) {
