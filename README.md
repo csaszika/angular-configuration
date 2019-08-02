@@ -5,8 +5,7 @@ Add tslint to your rulesDirectory and extend base configuration:
 ```
 {
   "rulesDirectory": [
-    "node_modules/codelyzer",
-    "node_modules/angular-configuration/tslint"
+    "node_modules/codelyzer"
   ],
   "extends": ["./node_modules/angular-configuration/tslint.json"]
 }
