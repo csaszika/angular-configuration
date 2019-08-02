@@ -1,14 +1,14 @@
 {
   "name": "angular-configuration",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "peerDependencies": {
-    "@commitlint/config-conventional": "^8.0.0",
-    "codelyzer": "~5.0.1",
-    "rxjs-tslint-rules": "^4.23.2",
-    "stylelint": "^10.0.1",
-    "stylelint-order": "^3.0.0",
-    "tslint": "~5.17.0",
-    "typescript": "~3.5.1",
+    "@commitlint/config-conventional": "^8.1.0",
+    "codelyzer": "~5.1.0",
+    "rxjs-tslint-rules": "^4.24.3",
+    "stylelint": "^10.1.0",
+    "stylelint-order": "^3.0.1",
+    "tslint": "~5.18.0",
+    "typescript": "~3.5.3",
     "tslint-consistent-codestyle": "^1.15.1"
   }
 }
