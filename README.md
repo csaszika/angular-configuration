@@ -42,8 +42,8 @@ Extend base configuration:
 Usage in package.json:
 ```
 "scripts": {
-  "lint-style": "stylelint \"src/**/*.ts\""
-  "lint-style-fix": "stylelint \"src/**/*.ts\" --fix"
+  "lint-style": "stylelint \"src/**/*.(scss|html)\""
+  "lint-style-fix": "stylelint \"src/**/*.(scss|html)\" --fix"
 }
 ```
 
