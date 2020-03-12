@@ -1,6 +1,6 @@
 {
   "name": "angular-configuration",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "peerDependencies": {
     "@commitlint/config-conventional": "^8.3.3",
     "codelyzer": "~5.2.1",
