@@ -162,7 +162,50 @@
     "prefer-readonly": true,
     "unnecessary-else": true,
     "unnecessary-constructor": true,
-    "rxjs-finnish": true,
-    "rxjs-no-unsafe-takeuntil": true
+    "rxjs-finnish": {
+			"options": [{
+				"names": {
+					"store$": false,
+					"canActivate$": false,
+					"canActivateChild$": false,
+					"canDeactivate$": false,
+					"canLoad$": false,
+					"intercept$": false,
+					"resolve$": false,
+					"validate$": false,
+					"connect$": false,
+					"transform$": false
+				},
+				"types": {
+					"^EventEmitter$": false
+				}
+			}],
+			"severity": "error"
+		},
+		"rxjs-no-async-subscribe": true,
+		"rxjs-no-ignored-subscription": true,
+		"rxjs-no-unsafe-catch": true,
+		"rxjs-no-unsafe-takeuntil": true,
+		"rxjs-no-unsafe-first": true,
+		"rxjs-prefer-angular-composition": true,
+		"rxjs-no-subclass": true,
+		"rxjs-no-nested-subscribe": true,
+		"rxjs-no-unbound-methods": true,
+		"rxjs-no-unsafe-scope": {
+			"options": [{
+				"allowDo": true,
+				"allowTap": true,
+				"allowSubscribe": true,
+				"allowParameters": true,
+				"allowMethods": true,
+				"allowProperties": true
+			}],
+			"severity": "error"
+		},
+		"rxjs-no-index": true,
+		"rxjs-no-internal": true,
+		"rxjs-no-patched": true,
+		"rxjs-no-unused-add": true,
+    "rxjs-no-tap": true
   }
 }
